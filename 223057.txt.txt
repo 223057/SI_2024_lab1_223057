@@ -1,0 +1,48 @@
+4. $ mkdir SI_2024_lab1_223057 -> за да се креира директориум
+   $ git init -> за иницијализирање на репозиториум
+5. $ git remote add origin https://github.com/223057/SI_2024_lab1_223057.git -> за поврзување на локален репозиториум со remote repo
+6. $ nano README.md -> за креирање на датотека
+   $ git add README.md -> датотеката се додава и од статус "untracked", премминува во статус: "staged"
+   $ git commit -m "Initial commit" -> статусот на сите датотеки се менува од: "staged" во "unmodified" со соодветна порака за log
+7. $ git add --all -> сите "untracked" датотеки преминуваат во статус: "staged"
+   $ git commit -m "Add starter code" -> статусот на сите датотеки се менува од: "staged" во "unmodified" со соодветна порака за log
+8. $ git fetch origin -> за синхронизирање на сите гранки со remote repo
+   $ git push origin master -> додавање на сите локални commits од гранката master кон remote repository
+9. $ git branch bug1 -> креирање на првата гранка
+   $ git branch bug2 -> креирање на втората гранка
+10.$ git checkout bug1 -> HEAD се менува на наведената гранка, bug1
+11.$ git commit -am "Fix wrong condition in filterOddLengthStrings" -> додавање и commit на сите датотеки кои се со статус "untracked" на гранката bug1
+12.$ git checkout bug2 -> HEAD се менува на наведената гранка, bug2
+13.$ git commit -am "Fix wrong condition in makeBigStringFrom" -> додавање и commit на сите датотеки кои се со статус "untracked" на гранката bug2
+14.$ git checkout bug1 -> HEAD се менува на наведената гранка, bug1
+15.$ git commit -am "Call method filterOddLengthStrings in main class" -> додавање и commit на сите датотеки кои се со статус "untracked" на гранката bug1
+16.$ git checkout bug2 -> HEAD се менува на наведената гранка, bug2
+17.$ git commit -am "Call method makeBigStringFrom in main class" -> додавање и commit на сите датотеки кои се со статус "untracked" на гранката bug2
+18.$ git fetch origin -> за синхронизирање на сите гранки со remote repo
+   $ git push origin bug1 -> додавање на сите локални commits од гранката bug1 кон remote repository
+   $ git push origin bug2 -> додавање на сите локални commits од гранката bug2 кон remote repository
+19.$ git checkout master -> HEAD се менува на наведената гранка, master
+20.$ git merge bug1 -> наведената гранка, bug1, се спојува со гранката на која се наоѓаме, master
+   -нема конфликти, за спојувањето се искористи Fast-forward стратегија
+21.$ git fetch origin -> за синхронизирање на сите гранки со remote repo
+   $ git push origin master -> додавање на сите локални commits од гранката master кон remote repository
+   $ git checkout bug1 -> HEAD се менува на наведената гранка, bug1
+   $ git push origin bug1 -> додавање на сите локални commits од гранката bug1 кон remote repository
+   $ git checkout bug2 -> HEAD се менува на наведената гранка, bug2
+   $ git push origin bug2 -> додавање на сите локални commits од гранката bug2 кон remote repository
+22.$ git checkout bug2 -> HEAD се менува на наведената гранка, bug2
+23.$ git rebase master -> rebase спрема гранката master
+   $ git add SILab1Main.java -> бидејќи со rebase дојде до конфликти, истите требаше да се решат и да се додадат со add
+   $ git rebase --continue -> откако ќе се решат конфиктите се продолжува со следните команди
+   -се случија конфликти, ги разрешив мануелно со бришење на конфликт маркерите во file 
+24.$ git checkout master -> HEAD се менува на наведената гранка, master
+25.$ git merge bug2 -> наведената гранка, bug2, се спојува со гранката на која се наоѓаме, master
+   -во овој чекор немаше конфликти, за спојувањето се искористи Fast-forward стратегија
+26.$ git fetch origin -> за синхронизирање на сите гранки со remote repo
+   $ git push origin master -> додавање на сите локални commits од гранката master кон remote repository
+   $ git checkout bug1 -> HEAD се менува на наведената гранка, bug1
+   $ git push origin bug1 -> додавање на сите локални commits од гранката bug1 кон remote repository
+   $ git checkout bug2 -> HEAD се менува на наведената гранка, bug2
+27.$ git push origin bug2 --force -> додавање на локалните commits од bug2 кон remote repository со употреба на “сила“
+28.$ nano logs.txt -> за креирање на датотека
+   $ git commit -am "Final commit" -> додавање и commit на сите датотеки кои се со статус "untracked" на гранката master

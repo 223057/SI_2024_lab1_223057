@@ -1,0 +1,36 @@
+commit ccb9d96098b0de95818e22441bfa78640779252c (HEAD -> master, origin/master, origin/bug2, bug2)
+Author: Mila Stamatovska <mila.stamatovska@students.finki.ukim.mk>
+Date:   Wed Mar 20 19:59:20 2024 +0100
+
+    Call method makeBigStringFrom in main class
+
+commit 5a2fb0ccadac77aea97c392a044830ba7e47fbc3
+Author: Mila Stamatovska <mila.stamatovska@students.finki.ukim.mk>
+Date:   Wed Mar 20 19:56:19 2024 +0100
+
+    Fix wrong condition in makeBigStringFrom
+
+commit e084508710e88496bddac61da102716be66854df (origin/bug1, bug1)
+Author: Mila Stamatovska <mila.stamatovska@students.finki.ukim.mk>
+Date:   Wed Mar 20 19:57:38 2024 +0100
+
+    Call method filterOddLengthStrings in main class
+
+commit 3e515dd3df655d1413587cd7d015ce42b1ad3a9f
+Author: Mila Stamatovska <mila.stamatovska@students.finki.ukim.mk>
+Date:   Wed Mar 20 19:55:02 2024 +0100
+
+    Fix wrong condition in filterOddLengthStrings
+
+commit da6926dc915d4acb6752eeab78d069a9971bc342
+Author: Mila Stamatovska <mila.stamatovska@students.finki.ukim.mk>
+Date:   Wed Mar 20 19:50:15 2024 +0100
+
+    Add starter code
+
+commit 75e0c429feaa1964ad1ff207a3219c96fed369d5
+Author: Mila Stamatovska <mila.stamatovska@students.finki.ukim.mk>
+Date:   Wed Mar 20 19:49:03 2024 +0100
+
+    Initial commit
+
